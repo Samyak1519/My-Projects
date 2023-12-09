@@ -11,12 +11,15 @@ function AllProjects() {
 
   return (
     <>
-      <h1>All Projects</h1>
-      <p>List of Projects are as Follows :-</p>
-      <Container>
-        {projects.length > 0
-          ? projects.map((item) => <Project project={item} />)
-          : "No project"}
+      <Container className="text-center">
+        <h1>All Projects</h1>
+        <hr />
+        <Container>
+          
+          {projects.length > 0
+            ? projects.map((item) => <Project project={item} />)
+            : "No project"}
+        </Container>
       </Container>
     </>
   );

@@ -6,6 +6,7 @@ function Footer() {
           backgroundColor: "black",
           color: "whitesmoke",
           padding: "20px",
+          marginTop: "20px",
         }}
       >
         <center>

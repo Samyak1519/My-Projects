@@ -12,12 +12,15 @@ function Project({ project }) {
   return (
     <>
       <Card>
-        <CardBody className="text-center">
-          <CardTitle>{project.title}</CardTitle>
+        <CardBody>
+          <CardTitle>
+            <h2>{project.title}</h2>
+          </CardTitle>
           <CardText>{project.description}</CardText>
 
           <Container>
             <Button color="primary m-1">View</Button>
+            <Button color="warning">Update</Button>
             <Button color="danger m-1">Delete</Button>
           </Container>
         </CardBody>
