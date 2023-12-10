@@ -5,7 +5,8 @@ function AboutMe() {
   return (
     <>
       <Container style={{ textAlign: "center" }}>
-        <h1>Hiee there it's me Samyak Nimsarkar. Nice to Meet you. :)</h1>
+        <h1>Hiee there, It's me Samyak Nimsarkar.</h1>
+        <h3>Nice to Meet you. :)</h3>
       </Container>
     </>
   );

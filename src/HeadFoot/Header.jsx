@@ -1,9 +1,13 @@
+import { Toast } from "bootstrap";
 import React from "react";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 import { Button, Navbar, NavbarBrand } from "reactstrap";
 
 function Header({ name }) {
   // (Object Destructuring = {})Passing Name in this Function same like codes. [Props]
+
+  const loginMgs = () => toast.info("Why u want to login here...?");
   return (
     <>
       {/* <header style={{ backgroundColor: "lavender", paddingTop: "10px" }}>
@@ -14,6 +18,7 @@ function Header({ name }) {
         </center>
       </header> */}
 
+      <ToastContainer />
       <Navbar className="mb-1" color="dark" dark style={{ padding: "13px" }}>
         <Link
           to="/"
@@ -31,7 +36,9 @@ function Header({ name }) {
           BeyondEternity
         </Link>
         BeyondEternity
-        <Button color="success">LogIn</Button>
+        <Button color="success" onClick={loginMgs}>
+          LogIn
+        </Button>
       </Navbar>
     </>
   );
