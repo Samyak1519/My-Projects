@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Container, Navbar, NavbarBrand, Table } from "reactstrap";
 
 function NaviBar() {
@@ -12,27 +13,44 @@ function NaviBar() {
         color="dark"
         dark
         style={{
-          paddingTop: "15px",
+          paddingTop: "20px",
           textAlign: "center",
           borderRadius: "40px",
           margin: "10px",
           marginBottom: "20px",
+          fontSize:"16px"
         }}
       >
         <Container>
           <Table dark responsive>
             <tr>
               <td>
-                <NavbarBrand href="/">Home</NavbarBrand>
+                <Link style={{ textDecoration: "none" }} tag="a" to="/">
+                  Home
+                </Link>
               </td>
               <td>
-                <NavbarBrand href="/add-project">Add Project</NavbarBrand>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  tag="a"
+                  to="/add-project"
+                >
+                  Add Project
+                </Link>
               </td>
               <td>
-                <NavbarBrand href="/all-projects">All Projects</NavbarBrand>
+                <Link
+                  style={{ textDecoration: "none" }}
+                  tag="a"
+                  to="/all-projects"
+                >
+                  All Project
+                </Link>
               </td>
               <td>
-                <NavbarBrand href="/about-me">About Me</NavbarBrand>
+                <Link style={{ textDecoration: "none" }} tag="a" to="/about-me">
+                  About Me
+                </Link>
               </td>
             </tr>
           </Table>

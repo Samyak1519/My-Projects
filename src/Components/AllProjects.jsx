@@ -14,9 +14,7 @@ function AllProjects() {
     <>
       <ToastContainer />
       <Container className="text-center">
-        <h1>
-          <u>All Projects</u>
-        </h1>
+        <h1>All Projects</h1>
         <hr />
         <br />
         <Container>

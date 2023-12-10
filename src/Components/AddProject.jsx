@@ -9,7 +9,7 @@ function AddProject() {
   return (
     <>
       <h1 style={{ textAlign: "center" }}>
-        <u>Fill the Details</u>
+        Fill the Details
       </h1>
       <hr />
       <Form className="container" style={{ padding: "10px" }}>

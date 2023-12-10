@@ -16,7 +16,7 @@ function Home() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ paddingBottom: "20px" }}>Welcome to beyondEternity.</h1>
+          <h1 style={{ paddingBottom: "20px" }}>Welcome to BeyondEternity.</h1>
 
           <hr />
           <p

@@ -13,7 +13,7 @@ function Project({ project }) {
   const deleted = () => toast.error("Project Deleted.");
   return (
     <>
-      <Card>
+      <Card style={{ margin: "10px", borderRadius: "15px" }}>
         <CardBody>
           <CardTitle>
             <h2>{project.title}</h2>

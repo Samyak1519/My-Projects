@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Button, Navbar, NavbarBrand } from "reactstrap";
 
 function Header({ name }) {
@@ -14,7 +15,10 @@ function Header({ name }) {
       </header> */}
 
       <Navbar className="mb-1" color="dark" dark style={{ padding: "13px" }}>
-        <NavbarBrand href="/">
+        <Link
+          to="/"
+          style={{ color: "white", textDecoration: "none", fontSize: "22px" }}
+        >
           <img
             alt="logo"
             src="../../BElogo_Round.jpg"
@@ -25,7 +29,8 @@ function Header({ name }) {
             }}
           />
           BeyondEternity
-        </NavbarBrand>
+        </Link>
+        BeyondEternity
         <Button color="success">LogIn</Button>
       </Navbar>
     </>
