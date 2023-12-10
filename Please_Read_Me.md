@@ -1,7 +1,11 @@
 ## To Update to GitHub to existing data:-
 
 1. git init (not imp).
+<<<<<<< HEAD
 2. git add "folder/file name(with extension)".
+=======
+2. git add "folder/file(with extension) name".
+>>>>>>> origin/main
 3. git commit -m "What is updated write here".
 4. git branch -M main.
 5. git push -u origin main.
