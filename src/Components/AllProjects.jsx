@@ -12,12 +12,14 @@ function AllProjects() {
 
   return (
     <>
-    <ToastContainer/>
+      <ToastContainer />
       <Container className="text-center">
-        <h1>All Projects</h1>
+        <h1>
+          <u>All Projects</u>
+        </h1>
         <hr />
+        <br />
         <Container>
-        
           {projects.length > 0
             ? projects.map((item) => <Project project={item} />)
             : "No project"}

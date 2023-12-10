@@ -1,9 +1,11 @@
+import { ToastContainer, toast } from "react-toastify";
 import { Button, Container } from "reactstrap";
-// import LogIn from "./LogIn";
 
 function Home() {
+  const nextPage = () => toast.info("Next page in not ready yet");
   return (
     <>
+      <ToastContainer />
       <Container>
         <div
           style={{
@@ -29,7 +31,7 @@ function Home() {
             myself and created a portfolio. To view them go to "All Projects" or
             click "Next" button below
           </p>
-          <Button color="warning" onClick={{}}>
+          <Button color="warning" onClick={nextPage}>
             Next
           </Button>
         </div>

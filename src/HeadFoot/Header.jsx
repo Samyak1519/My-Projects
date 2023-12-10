@@ -17,7 +17,7 @@ function Header({ name }) {
         <NavbarBrand href="/">
           <img
             alt="logo"
-            src="../../belogo2.jpg"
+            src="../../BElogo_Round.jpg"
             style={{
               height: "40px",
               width: "40px",
