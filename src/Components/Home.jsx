@@ -9,7 +9,7 @@ function Home() {
           style={{
             backgroundColor: "whitesmoke",
             border: "20px",
-            padding: "70px",
+            padding: "45px",
             borderRadius: "15px",
             textAlign: "center",
           }}

@@ -1,4 +1,5 @@
 import React from "react";
+import { toast } from "react-toastify";
 import {
   Button,
   Card,
@@ -9,6 +10,7 @@ import {
 } from "reactstrap";
 
 function Project({ project }) {
+  const deleted = () => toast.error("Project Deleted.");
   return (
     <>
       <Card>
@@ -21,7 +23,9 @@ function Project({ project }) {
           <Container>
             <Button color="primary m-1">View</Button>
             <Button color="warning">Update</Button>
-            <Button color="danger m-1">Delete</Button>
+            <Button color="danger m-1" onClick={deleted}>
+              Delete
+            </Button>
           </Container>
         </CardBody>
       </Card>

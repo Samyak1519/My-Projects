@@ -1,12 +1,17 @@
 import React from "react";
+import { toast } from "react-toastify";
 import { Button, Container, Form, FormGroup, Input, Label } from "reactstrap";
 
 function AddProject() {
+  const Added = () => toast.success("Project Added.");
+  const Clear = () => toast.warning("Cleared");
+
   return (
     <>
-      <h1>
+      <h1 style={{ textAlign: "center" }}>
         <u>Fill the Details</u>
       </h1>
+      <hr />
       <Form className="container" style={{ padding: "10px" }}>
         <FormGroup>
           <Label>Project Title</Label>
@@ -39,8 +44,12 @@ function AddProject() {
         </FormGroup>
 
         <Container className="text-center">
-          <Button color="warning m-1">Clear</Button>
-          <Button color="primary m-1">Add Project</Button>
+          <Button color="warning m-1" onClick={Clear}>
+            Clear
+          </Button>
+          <Button color="primary m-1" onClick={Added}>
+            Add Project
+          </Button>
         </Container>
       </Form>
     </>

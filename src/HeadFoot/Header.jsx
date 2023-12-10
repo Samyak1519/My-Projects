@@ -17,10 +17,14 @@ function Header({ name }) {
         <NavbarBrand href="/">
           <img
             alt="logo"
-            src=".\Images\belogo2.jpg"
-            style={{ height: "40", width: "40", marginRight: "10px" }}
+            src="../../belogo2.jpg"
+            style={{
+              height: "40px",
+              width: "40px",
+              marginRight: "10px",
+            }}
           />
-          beyondEternity
+          BeyondEternity
         </NavbarBrand>
         <Button color="success">LogIn</Button>
       </Navbar>

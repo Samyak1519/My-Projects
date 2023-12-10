@@ -1,15 +1,5 @@
 import { useState } from "react";
-import {
-  Collapse,
-  Container,
-  Nav,
-  NavItem,
-  NavLink,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Table,
-} from "reactstrap";
+import { Container, Navbar, NavbarBrand, Table } from "reactstrap";
 
 function NaviBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +14,13 @@ function NaviBar() {
         style={{
           paddingTop: "15px",
           textAlign: "center",
-          borderRadius: "30px",
+          borderRadius: "40px",
           margin: "10px",
           marginBottom: "20px",
         }}
       >
         <Container>
-          <Table dark>
+          <Table dark responsive>
             <tr>
               <td>
                 <NavbarBrand href="/">Home</NavbarBrand>
@@ -39,10 +29,10 @@ function NaviBar() {
                 <NavbarBrand href="/add-project">Add Project</NavbarBrand>
               </td>
               <td>
-                <NavbarBrand href="/">All Projects</NavbarBrand>
+                <NavbarBrand href="/all-projects">All Projects</NavbarBrand>
               </td>
               <td>
-                <NavbarBrand href="/">About Me</NavbarBrand>
+                <NavbarBrand href="/about-me">About Me</NavbarBrand>
               </td>
             </tr>
           </Table>
